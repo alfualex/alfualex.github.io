@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(90deg, #1e1e1e 0%, #2c3e50 50%, #1e1e1e 100%);
+    color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+        text-shadow: 4px 4px 9px black;
+}
+
+header p {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+    color: #cccccc;
+    color: white;
+        text-shadow: 4px 4px 9px black;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+}
+
+.item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.item p {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    min-height: 60px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #cf711f;
+    cursor: pointer;
+}
+
+.blurred-left,
+.blurred-right {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+
+    height: auto;
+    overflow: hidden;
+    z-index: -1;
+
+    filter: blur(2px);
+    opacity: 0.5;
+}
+
+.blurred-left {
+    left: 70px;
+}
+
+.blurred-right {
+    right: 70px;
+}
+
+.blurred-left img,
+.blurred-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfolio.css">
+        <title>Portfolio - Alfonso Alexandre</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto  ">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br><br>
+
+        <main>
+            <div id="sobre-mi" class="contenido">
+                <img src="foto.jpg">
+                <h1>👋 Alfonso Alexandre</h1>
+                <p class="sobre-mi">Tengo 21 años y llevo casi un año metido en el mundo de la programación. Me gusta crear cosas y siempre estoy aprendiendo algo nuevo.</p>           
+            </div>
+        
+            <div id="habilidades" class="contenido">
+                <h1>💻 Habilidades</h1>
+                <div class="habilidades">
+                    <p class="habilidad">HTML</p>
+                    <p class="habilidad">CSS</p>
+                    <p class="habilidad">JavaScript</p>
+                </div>
+            </div>
+
+            <div id="proyectos" class="contenido">
+                <h1>🛠️ Proyectos</h1>
+                <div class="proyecto">
+                    <div class="proyecto-header">
+                        <h3 class="nombre-proyecto">Mi primer CV</h3>
+                        <div class="botones">
+                            <a class="boton" href="Proyectos/CV/cv.html" target="_blank">Ver</a>
+                            <a class="boton" href="zips/CV.zip">Código</a>
+                        </div>
+                    </div>
+                    <p class="descripcion">Creado con HTML.</p>
+                </div>
+                <br><br>
+                <div class="proyecto">
+                    <div class="proyecto-header">
+                        <h3 class="nombre-proyecto">Galería de Sabores </h3>
+                        <div class="botones">
+                            <a class="boton" href="Proyectos/Galeria de sabores/galeria-de-sabores.html" target="_blank">Ver</a>
+                            <a class="boton" href="zips/galeria-de-sabores.zip" download>Código</a>
+                        </div>
+                    </div>
+                    <p class="descripcion">Creado con HTML y CSS.</p>
+                </div>
+                <br><br>
+                <div class="proyecto">
+                    <div class="proyecto-header">
+                        <h3 class="nombre-proyecto">Portfolio</h3>
+                        <div class="botones">
+                            <a class="boton" href="zips/portfolio.zip" download>Código</a>
+                        </div>
+                    </div>
+                    <p class="descripcion">Creado con HTML, CSS y JavaScript.</p>
+                </div>
+            </div>
+
+            <div id="contacto" class="contenido">
+                <h1>✉️ Contacto</h1>
+                <div class="email">
+                    <input type="text" id="correo" value="alfonsoalexandre26@gmail.com" readonly>
+                    <button id="copiar" title="Copiar">Copiar</button>
+                </div>
+            </div>
+            <br><br>
+        </main>  
+        <script src="portfolio.js"></script>
+    </body>
+</html>
